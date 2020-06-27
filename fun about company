@@ -1,0 +1,39 @@
+print "You enter your second Company then you have to two option which one do you like to choose with #1 or #2?"
+person = raw_input("???:> ")
+
+if person == "1":
+    print "Here's two awatari at the moment. who's person you're stick with?" 
+    print "1. kattike."
+    print "2. khachad."
+    
+    awatari = raw_input("> ")
+    
+    if awatari == "1":
+        print "kattike show his attitute slowly then doomed you badly. Good job!"
+        
+    elif awatari == "2":
+        print "Khachd gone a killing you daily and whole at the duty hour. Good job!"
+        
+    else:
+        print "Well, doing %s you have to promptly runs away." % better
+        
+elif person == "2":
+    print "You stare into the endless grinder's wheel at Sandong Yanma. then what should you do? You have to 3 option right now:"
+    print "1. Co-operate with Kumai and stay in the company."
+    print "2. Co-operate with Dale and stay in the company.."
+    print "3. Co-operate with Khachad and stay in the company.."
+    
+    okey = raw_input("> ")
+    
+    if okey == "1" or insanity == "5":
+        print "He always says Irakhe aande jana. Good job!"
+    if okey == "2":
+        print "You think the company alongwith you, but truth is invert."
+    if okey == "3":
+        print "You should always pay attention to Khachad, Otherwise you're gone."
+    else:
+        print "The insanity rots your eyes into a pool of muck. Good job!"
+        
+else:
+    print "No-one knows about you whose work in this company. Good job!"
+    
