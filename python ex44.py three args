@@ -1,0 +1,35 @@
+class Parent(object):
+    
+    def override(self):
+        print "PARENT override()"
+        
+    def implicit(self):
+        print "PARENT implicit()"
+        
+    def altered(self):
+        print "PARENT altered()"
+        
+class Child(Parent):
+    
+    def override(self):
+        print "CHILD override()"
+        
+    def altered(self):
+        print "CHILD, BEFORE PARENT altered()"
+        super(Child, self).altered()
+        print "CHILD, AFTER PARENT altered()"
+        
+dad = Parent()
+son = Child()
+
+# this line gone print out first kind of thing it means (implicit inheritance)
+dad.implicit()
+son.implicit()
+
+# this line gone a print it out second kind of thing which is "override"
+dad.override()
+son.override()
+
+#this line gone a print one of the three task which is <altered>
+dad.altered()
+son.altered()
